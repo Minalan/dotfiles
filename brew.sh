@@ -102,5 +102,9 @@ brew install zopfli
 brew install mongodb
 brew install node
 
+# useful utils
+brew install jq
+brew install xmlstarlet
+
 # Remove outdated versions from the cellar.
 brew cleanup
