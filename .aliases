@@ -147,3 +147,33 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
+
+#Xede ssh/scp
+alias sshxede="ssh -i ~/.ssh/id_rsa_xede"
+alias scpxede="scp -i ~/.ssh/id_rsa_xede"
+
+#AWS ssh/scp
+alias sshaws="ssh -i ~/.ssh/hcptdev_datahub_us_east.pem"
+alias scpaws="scp -i ~/.ssh/hcptdev_datahub_us_east.pem"
+
+#AWS EMR ssh/scp
+alias sshemr="ssh -i ~/.ssh/hcptdev_datahub_emr_us_east.pem"
+alias scpemr="scp -i ~/.ssh/hcptdev_datahub_emr_us_east.pem"
+
+#AWS Prod EMR ssh
+alias sshprodemr="ssh -i ~/.ssh/hcptprod_datahub_emr_us_east.pem"
+
+#AWS Prod ssh/scp
+alias sshprodaws="ssh -i ~/.ssh/hcptprod_datahub_bdp_us_east.pem"
+alias scpprodaws="scp -i ~/.ssh/hcptprod_datahub_bdp_us_east.pem"
+
+#Java version
+alias jdk17="export JAVA_HOME=$(/usr/libexec/java_home -v 1.7) && java -version"
+alias jdk18="export JAVA_HOME=$(/usr/libexec/java_home -v 1.8) && java -version"
+
+
+alias lock="pmset displaysleepnow"
+
+alias mvn1="mvn -T1"
+alias mvn2="mvn -T2"
+alias mvnf="mvn -T1C"

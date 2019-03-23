@@ -46,3 +46,9 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+export SCALA_HOME="/usr/local/Cellar/scala@2.11/2.11.11/libexec"
+
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export PATH=$JAVA_HOME/bin:$PATH
+export MAVEN_OPTS="-Xms256m -Xmx4096m -Xss64m"
